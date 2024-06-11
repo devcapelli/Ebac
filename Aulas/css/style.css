@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#user, #senha{
+    margin-bottom: 10px;
+    text-align: justify;
+}
