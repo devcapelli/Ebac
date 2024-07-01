@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>EBAC Banking</h1>
         <h2>Depósitos</h2>
-    </header>
-    <form id="form-deposito">
-        <input id="nome-beneficiario" type="text" placeholder="Nome completo do beneficiário" required />
-        <input id="agencia-deposito" type="text" placeholder="Agência" required />
-        <input id="conta-deposito" type="text" placeholder="Conta" required />
-        <input id="valor-deposito" type="text" placeholder="Valor" required />
-        <textarea id="descricao" placeholder="Descrição(opcional)"></textarea>
-        <button type="submit">DEPOSITAR</button>
-    </form>
+        <form id="form-deposito">
+            <input id="nome-beneficiario" type="text" placeholder="Nome completo do beneficiário" required />
+            <p class="error-message">O nome precisa ser completo!</p>
+            <input id="numero-conta" type="number" placeholder="Número da conta" required />
+            <input id="valor-deposito" type="number" placeholder="Valor" required />
+            <textarea id="descricao" placeholder="Descrição(opcional)"></textarea>
+            <button id="btn-deposito" type="submit">DEPOSITAR</button>
+        </form>
+        <p class="sucess-message"></p>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
